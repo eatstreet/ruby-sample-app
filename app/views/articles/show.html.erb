@@ -1,0 +1,18 @@
+<h1><%= @article.title %></h1>
+
+<p><%= @article.body %></p>
+
+<% if @article.comments.length > 0 %>
+<h3>Comments</h3>
+<ul>
+<% for c in @article.comments do %>
+  <li><%= c.body %><% if c.reactions.length > 0 %>
+  <br />
+  <% for r in c.reactions do %>
+    <%= r.emoji %>
+  <% end %>
+  <% end %>
+  </li>
+<% end %>
+</ul>
+<% end %>
