@@ -36,7 +36,7 @@ When you open this git repository in VSCode you should see the following pop up 
 
 Click "Reopen in Container"
 
-In case it disappeared, you can open the command pallete (ctr+shift+p / cmd+shift+p) and type in reopen container.
+In case it disappeared, you can open the command palette (ctr+shift+p / cmd+shift+p) and type in reopen container.
 
 ![](/readme/reopen-menu.png)
 
