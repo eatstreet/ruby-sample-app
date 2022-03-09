@@ -169,4 +169,32 @@ Some things I'd like to be able to do:
 
 ## Submitting your work
 
-TODO
+Again, do not push to a public repository.
+You will be sharing a [patch file](https://en.wikipedia.org/wiki/Patch_(Unix)) with us by email.
+A patch file will show all your changes in one file and allow us to review it on our side.
+
+To create a patch file, you will run 
+```
+git diff reference HEAD -- > your-name.diff
+```
+
+Where `your-name` is well.. your name!
+
+![](/readme/patch.png)
+
+Inside it will look something like
+```diff
+diff --git a/app/views/articles/index.html.erb b/app/views/articles/index.html.erb
+index 64a9258..58ea98b 100644
+--- a/app/views/articles/index.html.erb
++++ b/app/views/articles/index.html.erb
+@@ -1,4 +1,4 @@
+-<h1>Hello, Rails!</h1>
++<h1>Hello, Ruby on Rails!</h1>
+
+ <h1>Articles</h1>
+```
+
+Then email the hiring manager for this position with the file attached!
+
+We will review your patch and get back to you on the next steps in this process.
