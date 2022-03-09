@@ -51,7 +51,7 @@ _At the bottom of the screen, if the terminal dissapeared you can click and drag
 
 You should see 
 ```
-vscode ➜ /workspaces/blog (main ✗) $ 
+vscode ➜ /workspaces/ruby-sample-app (main ✗) $ 
 ```
 
 Now it's time to set up the database by running a migration 
@@ -62,6 +62,7 @@ Run
 bin/rails db:migrate
 ```
 
+_(The screenshot has the name blog, it should be ruby-sample-app for you, don't worry about being in the right folder, vscode will drop you in the correct place.)_
 ![](/readme/migration.png)
 
 ### Project Running
@@ -72,6 +73,7 @@ Now that the database is ready, you can start the server!
 bin/rails server
 ```
 
+_(The screenshot has the name blog, it should be ruby-sample-app for you, don't worry about being in the right folder, vscode will drop you in the correct place.)_
 ![](/readme/running.png)
 
 It will pop up automatically that the application is running on port 3000.
