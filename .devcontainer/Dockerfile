@@ -24,4 +24,8 @@ RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSI
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
 # Install gems
-RUN "bundle install"
+RUN gem install bundler
+COPY Gemfile /tmp/gemfile-tmp/
+COPY Gemfile.lock /tmp/gemfile-tmp/
+RUN bundle install --gemfile=/tmp/gemfile-tmp/Gemfile \
+    && rm -rf /tmp/gemfile-tmp
